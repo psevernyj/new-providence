@@ -3,11 +3,21 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import * as serviceWorker from './serviceWorker';
+import {Provider} from "react-redux";
+import {createBrowserHistory} from "history";
+import {store} from "./store";
+import {BrowserRouter} from "react-router-dom";
+import 'semantic-ui-css/semantic.min.css';
+
+const history = createBrowserHistory();
 
 ReactDOM.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
+  <Provider store={store}>
+      <BrowserRouter history={history}>
+          <App />
+      </BrowserRouter>
+
+  </Provider>,
   document.getElementById('root')
 );
 

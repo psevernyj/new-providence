@@ -1,0 +1,28 @@
+.navigation{
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-flow: wrap;
+  background-color: #f6f7f7;
+  padding: 1rem 0;
+
+  .navItem{
+    text-decoration: none;
+    color: #26272d;
+    font-size: 16px;
+  }
+  .logoItem{
+    font-size: 1.6rem;
+    span{
+      font-weight: bold;
+    }
+  }
+  .help{
+    color: #1b1c1e;
+    opacity: 0.4;
+  }
+  .navButton{
+    background-color: #267df4 !important;
+    color: aliceblue !important;
+  }
+}

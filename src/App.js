@@ -1,25 +1,27 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
+import Nav from "./components/Nav";
+import {Route, Switch} from "react-router-dom";
+import Pricing from "./components/Pricing";
+import Contacts from "./components/Contacts";
+import Help from "./components/Help";
+import Tour from "./components/Tour";
+import Features from "./components/Features";
+import MainPage from "./components/MainPage";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+        <Nav/>
+        <Switch>
+            <Route path='/' exact component={MainPage}/>
+            <Route path='/tour' component={Tour}/>
+            <Route path='/features' component={Features}/>
+            <Route path='/pricing' component={Pricing}/>
+            <Route path='/help' component={Help}/>
+            <Route path='/contacts' component={Contacts}/>
+        </Switch>
+    </>
   );
 }
 

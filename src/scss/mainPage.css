@@ -1,0 +1,36 @@
+.mainPageContent {
+  background-image: url("../images/section_1_bg.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  object-fit: contain;
+  background-attachment: fixed;
+  background-position: center center;
+  height: 95vh;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-direction: column;
+}
+.mainPageContent .generalTitle {
+  font-family: "Varela Round", sans-serif;
+  color: #26272d;
+  font-size: 4rem;
+  font-weight: 400;
+  line-height: 72px;
+  padding-top: 5rem;
+}
+.mainPageContent .headerParagraph {
+  text-align: center;
+  width: 50%;
+  color: #8c8f94;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 28px;
+}
+.mainPageContent .phoneImage {
+  position: fixed;
+  bottom: 0;
+  width: 20%;
+}
+
+/*# sourceMappingURL=mainPage.css.map */
